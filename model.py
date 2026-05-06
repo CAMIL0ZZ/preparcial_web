@@ -8,7 +8,7 @@ class Farmaco(SQLModel, table=True):
     laboratorio: str
     costo: float
     via_administracion: ViaAdministracion
-    activo: bool = Field(default=True)  # Estrategia: Borrado lógico
+
 
 class Cliente(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
@@ -16,4 +16,3 @@ class Cliente(SQLModel, table=True):
     edad: int
     correo: str
     id_farmaco: Optional[int] = Field(default=None, foreign_key="farmaco.id")
-    activo: bool = Field(default=True)
