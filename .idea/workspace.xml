@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6847d7b9-76f1-47a5-b940-b6803fc52ce0" name="Changes" comment="creacion atributo especial de via de la administracion medicamento" />
+    <list default="true" id="6847d7b9-76f1-47a5-b940-b6803fc52ce0" name="Changes" comment="creacion de los modelos de cliente y farmaco" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,12 +81,29 @@
       <option name="project" value="LOCAL" />
       <updated>1778072922872</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="creacion de los modelos de cliente y farmaco">
+      <option name="closed" value="true" />
+      <created>1778073309684</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1778073309684</updated>
+    </task>
+    <task id="LOCAL-00004" summary="creacion de los modelos de cliente y farmaco">
+      <option name="closed" value="true" />
+      <created>1778073451392</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1778073451392</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="primer commit" />
     <MESSAGE value="creacion atributo especial de via de la administracion medicamento" />
-    <option name="LAST_COMMIT_MESSAGE" value="creacion atributo especial de via de la administracion medicamento" />
+    <MESSAGE value="creacion de los modelos de cliente y farmaco" />
+    <option name="LAST_COMMIT_MESSAGE" value="creacion de los modelos de cliente y farmaco" />
   </component>
 </project>
