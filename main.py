@@ -1,17 +1,27 @@
 from fastapi import FastAPI, HTTPException, status
+from contextlib import asynccontextmanager
 from typing import List
 from model import Farmaco, Cliente
 import operations_DB as db
 
-app = FastAPI(
-    title="Sistema de Gestión de Farmacia (API)",
-    description="CRUD para fármacos y clientes conectado a servidor Neon"
-)
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
 
-@app.on_event("startup")
-def on_startup():
     db.create_db_and_tables()
+    print("Conexión con Neon exitosa y tablas verificadas.")
+
+    yield
+
+
+    print("Apagando servidor...")
+
+
+
+app = FastAPI(
+    title="Sistema de Gestión de Farmacia",
+    lifespan=lifespan
+)
 
 
 

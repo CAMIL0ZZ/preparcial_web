@@ -1,14 +1,14 @@
 import os
 from dotenv import load_dotenv
-from sqlmodel import Session, create_engine, select
-from model import Farmaco, Cliente
 from model import Cliente, Farmaco
+from sqlmodel import Session, create_engine, select, SQLModel
 
 load_dotenv()
 engine = create_engine(os.getenv("DATABASE_URL"))
 
+
 def create_db_and_tables():
-    from sqlmodel import SQLModel
+
     SQLModel.metadata.create_all(engine)
 
 
